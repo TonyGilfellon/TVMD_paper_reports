@@ -1,8 +1,8 @@
 # S2 — catalogue correctness and Route A evidence
 
-**As of:** 2026-11-17T11:17:07Z (UTC; documentary reconciliation).
+**As of:** 2026-11-17T12:58:50Z (UTC; S2-NEXT-20261117-R2 documentary synthesis).
 
-**Decision ID:** S2-REPORT-20261117-R1 — proposed owner reconciliation; awaiting approval, not committed/published.
+**Decision ID:** S2-REPORT-20261117-R2 — reporting publication authorised by the author on 17 November 2026. Underlying planning documents remain PROPOSED / NOT SEALED; no scientific gate is released. R1 reconciliation was published in reporting commit `672870ab37c5f3a08531e865d943de4a7a7053be`.
 
 **Scientific worktree (S):** `C:\Users\zup98752\PycharmProjects\TVMD_paper_S2_20261115`.
 
@@ -11,6 +11,20 @@
 **Inherited evidence root (O):** `C:\Users\zup98752\PycharmProjects\TVMD_paper`.
 
 **Overall:** bounded software ACCEPT/PASS; retrospective descriptive import PASS; native-reference CONDITIONAL; independent physical validation and further execution HOLD. Existing evidence supports a bounded comparative-methodology argument without another B1 calculation. Distinct novelty, practical consequence and editorial adequacy remain unresolved.
+
+## R2 manuscript evidence and novelty gate — proposed assessment
+
+Instruction `docs/instructions/S2_NEXT.md` / S2-NEXT-20261117-R2 was reviewed with the reporting protocol, published S2/FRM/A5 statuses and programme reviewer matrix at reporting commit `672870ab37c5f3a08531e865d943de4a7a7053be`. The scientific branch/HEAD above is unchanged. New documents are untracked, hash-bound **PROPOSED / NOT SEALED** planning records, not manuscript text, sealed scientific decisions or new results.
+
+Deliverables: `S/validation/route_a_s2_next_r2_proposed_20261117/` contains `PROPOSED_CONTRIBUTION_MEMO.md`, `CLAIM_EVIDENCE_LIMITATIONS.md`, `REVIEWER_RESPONSE_READINESS.csv`, `REVIEWER_READINESS_GUIDE.md`, `FIGURE_TABLE_INVENTORY.md`, `MANUSCRIPT_PREPARATION_CHECKLIST.md` and `AUTHOR_DECISION_BRIEF.md`; source/quote/asset/preservation records and output hashes provide the documentary bindings.
+
+- **Argument:** a bounded full-complex voltage-derivative workflow and fair prior/representation comparison is coherent using accepted evidence; new Cartesian mathematics, measured workflow savings, independent native derivative accuracy and calibrated physical kicks are not demonstrated.
+- **Reviewers/editor:** all 30 atomic quotes matched the supplied full-copy transcription, preserving the 25-group mapping and fuller-copy reviewer attribution. Original portal attachments are not independently authenticated; the programme matrix remains thematic/incomplete and is not edited. Ready evidence, caveated scope and unresolved utility/novelty/editorial points are separate; no point is CLOSED and no response is drafted. The editor's reply is undated and conditional, not acceptance or an unconditional numerical-coupler mandate.
+- **Assets/preparation:** retain the existing six-section plan, 2 candidate evidence figures and 3 tables. Both core PNG byte identities match the earlier accepted audit; no figure regenerated. Native plot final-size legibility, source/asset completeness and actual manuscript-location/point-by-point review remain open. Definitions,estimators,analytical results and conditional native illustrations can be prepared by the author under separate writing authority while FRM/A5 physical claims remain withheld.
+- **Cross-stream dependency:** published FRM-4B1 is complete but CONDITIONAL limited stability; A5 has computational replay validation but physical benchmark HOLD and awaits a reviewed compatible handover. FRM completion/ingestion is not automatic A5 reference acceptance. These owner reports were not re-audited from raw data here; no physical result is promoted.
+- **Gate:** author/co-authors must judge whether the bounded comparative increment and practical rationale are scientifically consequential and adequately distinguish established methods; all reviewer scope departures need motivated treatment. Current evidence does not settle novelty or editorial adequacy. RouteD merits reconsideration only for a named unmet scientific need with an independent admissible reference,fair comparator,feasible reviewed protocol and separate authority. No automatic RouteD,W24/W25,B1 or CST progression.
+
+No numerical tests,fits,field/array analysis,CST,manuscript rewrite,figure production or reviewer reply occurred. No new thresholds were selected. E02-B remains confirmed; all earlier physical/provenance/scientific execution gates remain. The 12 December 2026 target is administrative,not an accuracy or novelty criterion. Current next action is author review of the proposed contribution/novelty gate and plan, not another calculation.
 
 ## Reconciliation of the historical baseline
 
@@ -76,4 +90,4 @@ These checks do not freshly verify scientific arrays/physical archives. No datas
 4. Retain Stage2B native-source qualification; D01 HOLD; 949/895 continuum limits; original pillbox pilot FAIL; R5-B/R5-C HOLD; B12 STOP; B17 suspension; reduced RouteD convention HOLD; W24-2 HOLD; W25 numerical/TVMD HOLD; P1 scientific threshold/execution gates. No physical gate is released by software/import acceptance.
 5. Future S2 milestones: manually reconcile this assigned report against new sealed evidence at completion; synchronise only safely with a clean reporting tree; preserve historical decisions; show report/diff and obtain approval before committing or pushing. No continuous monitoring/automatic publication is claimed. Other investigations/programme files are outside S2 ownership.
 
-**Reporting state:** clean reporting checkout was synchronised with `git pull --ff-only origin main` (already up to date). A5/FRM owner edits then appeared; the pre-edit check stopped, confirmed S2 unchanged, and reconciled ownership without pulling over or modifying either report. Only this assigned S2 file is proposed here. No scientific worktree edits/calculations/tests, no staging, commit or push. **STOP pending author approval.**
+**Reporting state:** R2 reporting publication is explicitly authorised; this does not seal the source planning documents or authorise new scientific execution. R1 publication is retained as historical fact. Concurrent A5/FRM updates were published separately and the fetched shared main tip was reconciled before this S2-only update. Untracked publication helpers are preserved. Only S2_STATUS.md is included; scientific worktree files, other investigations and programme files are unchanged by this publication. All scientific HOLD/STOP decisions remain.
