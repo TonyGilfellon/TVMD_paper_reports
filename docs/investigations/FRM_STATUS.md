@@ -1,11 +1,43 @@
 # FRM — fitting radius, mesh and longitudinal integration
 
-**As of:** 2026-11-17T12:50:17Z (UTC; documentary decision assessment).
-**Owner / decision ID:** FRM / FRM-NEXT-20261117-R2 (PROPOSED / NOT SEALED); assessment of existing FRM-4B1 evidence.
+**As of:** 2026-11-17T16:10:39Z (UTC; R3 completion verification, documentary only).
+**Owner / decision ID:** FRM / FRM-NEXT-20261117-R3 (PROPOSED / NOT SEALED); existing seven-radius evidence and A5 read-only interface.
 **Scientific worktree:** `C:\Users\zup98752\PycharmProjects\TVMD_paper_FRM`.
 **Branch / HEAD:** `investigation/frm-radius-mesh` / `c7f0a6f9fb37a94127c440d0345e2528fc1d7f80`.
 **Artifact state:** investigation reports/results are untracked local artifacts, not contained in this HEAD; source manifests and SHA-256 seals identify the evidence. Only new proposed documentary assessment files were created for this update; sealed scientific files/results were not changed.
 **Current status:** **CONDITIONAL — LIMITED STABILITY** for FRM-4B1. Physical derivative accuracy and mesh convergence remain unestablished.
+
+## R3 seven-radius support and interface — PROPOSED / NOT SEALED
+
+Instruction `docs/instructions/FRM_NEXT.md` / **FRM-NEXT-20261117-R3** was assessed with the reporting protocol and current FRM/A5/S2 reports at reporting HEAD `c4278e26fc822c03340cd84d92c41a779e1b131a`. Scientific branch/HEAD above is unchanged. No new fit, integration, field-array analysis, interpolation, test run, Lorentz benchmark or CST operation occurred; all scientific decisions and provenance limitations are preserved.
+
+Deliverables in the scientific FRM worktree, new namespace `validation/frm_next_20261117_r3/`:
+
+- `FRM_R3_RADIUS_SUPPORT_AND_INTERFACE.md`: exact seven-radius support/rank transcription and A5 interface covering source paths/hashes, case IDs, SI complex coefficients, finite endpoints, normalization, map layout and rank failures. SHA-256 `96a2b886fb36d24ed88b0e6622fb3ca57977583f5e3f0ac8cb251ed09166b932`.
+- `FRM_R3_OBSERVABLE_LIMITATIONS.md`: absolute/relative sensitivity interpretation, weak denominators, changed populations, observable distinctions and smallest future gate. SHA-256 `91e759bef97ae15f085a5653a1f1ed7c118845d51e00a55a9ca56fcb8d66d812`.
+- `SOURCE_REVIEW.json`: documentary source/index identities; 110 indexed artifacts checked unchanged. No raw-field reparse/rehash or native-state qualification. New documents remain untracked, PROPOSED / NOT SEALED, not part of scientific HEAD.
+
+**Support:** the 378 M0 configurations include all seven radii (2.5/3.75/5/6/7.5/9/10 mm), orders 2/3/4, density strides 1/2/4, 201/401/801 planes and both quadratures. 348 full-rank cases remain eligible for model-specific coefficients, not physical accuracy. All 30 failures remain: coarsest 2 mm lattice at R=2.5 mm (ranks 5/6, 5/10, 5/15) and R=3.75 mm cubic/quartic (8/10, 9/15), repeated across six z/rule choices. The rank table's additional nine historical fits are not M0 configurations.
+
+**Interpretation:** absolute complex deltas retain their units; relative changes divide by the baseline magnitude and are unavailable below the recorded cancellation guard. At R=10 mm, finest-density 801 trapezoid quadratic versus quartic, existing Hxx absolute change is 1,177,816.4661 V/m² (relative 4.6791), Hxy 572,880.6415 V/m² (5.5583), and Kxx 43,229.5420 V/m (4.6791). These are sensitivities, not electromagnetic error bars. A local field Hessian [V/m³], integrated Vz Hessian [V/m²] and transverse-voltage Jacobian [V/m] cannot be interchanged. `Bx/By` coefficient labels denote endpoint B_end [V/m], not magnetic flux density. Direct VA remains distinct from fitted V0.
+
+**Historical scope correction:** the R5-h2 fine-grid A5 cardinal-five 201-plane trapezoid discrepancy trend 1367.00 → 328.43 → 175.94 V at 2.5/3.75/5 mm was not a seven-radius M0 Lorentz benchmark. No historical 6/7.5/9/10 mm discrepancy is supplied or inferred. Seven-radius M0 coefficient sensitivity does not establish an optimal radius, physical convergence or isolated cylinder-radius effect.
+
+**Disposition:** retain CONDITIONAL numerical evidence and physical benchmark HOLD. The smallest immediate next gate is documentary: define the intended observable, uncertainty/normalization and independently justified tolerance, and resolve existing source/convention gaps. Only a separately authorised same-M0 on-axis direct-integration versus endpoint-aware T check is a minimal later numerical candidate, as already proposed by A5; implementation closure/agreement would remain descriptive without physical qualification. H/K instability is not an on-axis dipole-error bound. No new seven-radius sweep, mesh study, CST acquisition or automatic FRM-4B2 is recommended. Existing evidence suffices for bounded descriptive-methodology discussion with caveats.
+
+Reporting checkout contained an S2 edit and unrelated untracked publication helpers; no pull was made over them. Only FRM_STATUS.md is proposed here. R2 reporting publication at `e4f516df93552e30f03a5a77ec2dd8880f9d6d69` did not seal its scientific memo; this R3 delta awaits explicit approval before commit/push.
+
+### R3 completion verification — 17 November 2026
+
+All four R3 requirements are covered by the two deliverables: (1) all seven radii and 378 M0 configurations with the 348/30 eligibility split; (2) exact A5 read-only source/coefficient/support/endpoint/normalization interface; (3) absolute versus relative complex sensitivity, near-zero guards, population changes and distinct derivative units; (4) historical three-radius versus seven-radius scope and the smallest conditional future check. **R3 documentary assessment is complete; reporting approval remains pending.** This is not a new software, convergence or physical-validation PASS and does not seal the proposed scientific documents.
+
+Fresh completion checks confirmed both R3 document hashes above, all 110 indexed artifacts unchanged, and all four external E/H inputs present at their recorded sizes. Raw field hashes/native state were not freshly requalified. Retained test XML was inspected: FRM-4B1 **14**, FRM-4A **20**, FRM-3B5 **8** tests, each with zero failures/errors/skips. These historical tests concern implementation/ingestion/identifiability; **no tests ran for R3**. No scientific output was changed or recomputed during this verification.
+
+**R3 findings versus historical numbers:** R3 supplies documentary support/rank accounting, an exact interface and interpretation, not new Hessians or kick results. All numerical values in this section are transcribed from existing FRM-4B1/A5 evidence. Integrated derivative eligibility does not establish stability: the retained final decision remains **CONDITIONAL — LIMITED STABILITY**, with physical derivative/kick **HOLD**. Prior snapshot, load, candidate-preservation and ingestion decisions remain in their original scopes. Missing independently bound M0 native provenance, physical orientation/phasor certainty and calibrated error budgets remain unresolved.
+
+**Read-only reproducibility:** from the scientific FRM worktree at the HEAD above, inspect the R3 instruction and both documents, then join `validation/frm4b1/RANK_SPECTRA.csv` and `COEFFICIENTS.csv` by `case_id`; use `SUPPORT_MEMBERSHIP.csv` for exact nodes and `SENSITIVITY_ALL_ORDERS_DENSITIES.csv` for existing complex deltas/guards. A metadata-only example is `Import-Csv validation/frm4b1/RANK_SPECTRA.csv | Where-Object { $_.dataset -eq 'M0' -and $_.planes -eq '801' -and $_.rule -eq 'trapezoid' } | Select-Object radius_mm,density_stride,degree,n,rank,columns`. Use `Get-FileHash -Algorithm SHA256` for the two R3 documents and compare prior artifact-index entries without refreshing them. Read existing JUnit `testsuite` attributes in `validation/frm4b1/pytest_results.xml`, `validation/frm4a/pytest_results.xml` and `validation/frm3b5/pytest_results.xml`; do not execute the historical fitting/integration/test commands merely to reproduce this documentary assessment. `SOURCE_REVIEW.json` remains the original R3 review-time snapshot, not a refreshed baseline.
+
+The reporting tree now also contains A5/S2 owner edits and publication helpers; they are preserved. No pull is attempted over local changes, no other status/programme file is edited, and no commit/push is authorised by this completion verification.
 
 ## Proposed Route A decision assessment — FRM-NEXT-20261117-R2
 
@@ -24,7 +56,7 @@ The source-linked memo and supporting review records are **PROPOSED / NOT SEALED
 
 **A5 interface:** source paths/hashes, actual coordinates/supports, rank/spectra, integrated complex g/H, endpoint B_end/J_end, T/K, VA normalization and deterministic sensitivity envelopes can be handed over conditionally. M0 native-state/mesh/field-buffer hash binding, independently repeated acquisition, physical orientation/time-phasor certainty, verified-J energy scale and calibrated physical error bounds cannot be represented as established. R5 snapshot hashes do not supply missing M0 lineage. A5's physical benchmark HOLD and S2's separate editorial/physical gates remain unchanged.
 
-**Reporting reconciliation:** published FRM/A5/S2 reports were read at reporting HEAD `672870ab37c5f3a08531e865d943de4a7a7053be`, matching remote main by a read-only check. Two unrelated untracked publishing helpers prevented a clean-tree pull; they were left untouched, and the assigned FRM file was checked unchanged before this edit. The earlier FRM summary was published by the coordinator; this new assessment/status delta remains uncommitted and unpublished pending explicit approval. Other streams' reports and programme files are outside this edit's scope.
+**Reporting reconciliation:** published FRM/A5/S2 reports were read at reporting HEAD `672870ab37c5f3a08531e865d943de4a7a7053be`, matching remote main by a read-only check. Two unrelated untracked publishing helpers prevented a clean-tree pull; they were left untouched, and the assigned FRM file was checked unchanged before this edit. The R2 status delta was subsequently published at e4f516df93552e30f03a5a77ec2dd8880f9d6d69; the R2 scientific memo remains proposed/unsealed. The R3 status delta above remains uncommitted pending approval. Other streams' reports and programme files are outside this edit's scope.
 
 ## Latest scope and findings
 
@@ -81,4 +113,4 @@ Reproducibility: use `..\TVMD_paper\.venv\Scripts\python.exe -B`, with FRM root 
 4. A5 owns the independent physical coupler-kick benchmark, excitation/phase/impulse interpretation and force agreement. FRM supplies source-qualified numerical families and limitations only; no A5 benchmark or radius optimisation was performed.
 5. Future FRM milestone completion includes reconciling this assigned status file under `docs/programme/REPORTING_PROTOCOL.md`, reviewing the diff, and obtaining explicit approval before commit/push. No continuous monitoring or automatic publication is claimed.
 
-**Baseline reconciliation:** the coordinator's historical report is superseded only as a current status summary: FRM-4B1 is complete rather than pending, and the ambiguous adaptive-refinement baseline is corrected to operator-confirmed disabled. All sealed historical decisions, HOLDs, CONDITIONAL findings and provenance limitations remain preserved. That historical summary was subsequently committed in the reporting repository; the FRM-NEXT-20261117-R2 delta above is proposed, uncommitted and not published.
+**Baseline reconciliation:** the coordinator's historical report is superseded only as a current status summary: FRM-4B1 is complete rather than pending, and the ambiguous adaptive-refinement baseline is corrected to operator-confirmed disabled. All sealed historical decisions, HOLDs, CONDITIONAL findings and provenance limitations remain preserved. That historical summary was subsequently committed in the reporting repository; R2 reporting was published at e4f516df93552e30f03a5a77ec2dd8880f9d6d69 without sealing the scientific memo; the FRM-NEXT-20261117-R3 delta above remains proposed and unpublished.
