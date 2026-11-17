@@ -1,11 +1,30 @@
 # FRM — fitting radius, mesh and longitudinal integration
 
-**As of:** 2026-11-17T11:17:04Z (UTC).
-**Owner / decision ID:** FRM / FRM-4B1; reporting reconciliation of existing evidence only.
+**As of:** 2026-11-17T12:50:17Z (UTC; documentary decision assessment).
+**Owner / decision ID:** FRM / FRM-NEXT-20261117-R2 (PROPOSED / NOT SEALED); assessment of existing FRM-4B1 evidence.
 **Scientific worktree:** `C:\Users\zup98752\PycharmProjects\TVMD_paper_FRM`.
 **Branch / HEAD:** `investigation/frm-radius-mesh` / `c7f0a6f9fb37a94127c440d0345e2528fc1d7f80`.
-**Artifact state:** investigation reports/results are untracked local artifacts, not contained in this HEAD; source manifests and SHA-256 seals identify the evidence. No scientific files or results were changed for this reporting update.
+**Artifact state:** investigation reports/results are untracked local artifacts, not contained in this HEAD; source manifests and SHA-256 seals identify the evidence. Only new proposed documentary assessment files were created for this update; sealed scientific files/results were not changed.
 **Current status:** **CONDITIONAL — LIMITED STABILITY** for FRM-4B1. Physical derivative accuracy and mesh convergence remain unestablished.
+
+## Proposed Route A decision assessment — FRM-NEXT-20261117-R2
+
+**Recommendation:** retain FRM-4B1 **CONDITIONAL — LIMITED STABILITY** and physical integrated-derivative/kick **HOLD**. No new narrowly scoped physical PASS is justified without an independently supported observable-specific tolerance and qualified provenance. Existing bounded software/ingestion PASS decisions remain unchanged. No new scientific calculation, test run, fitting, integration, interpolation, CST operation or agreement metric was performed.
+
+The direct on-axis integral **VA [V] is distinct from fitted V0 [V]**. VA has no transverse polynomial-identifiability issue, but lacks independently established physical accuracy. V0 is comparatively insensitive in the tested families (longitudinal 0.47–1.29 ppm, order 1.37–9.14 ppm, density 0.600–32.25 ppm); this does not validate H or K_T. Hxx/Hxy/Hyy, K_T and normal/skew quadrupole descriptors remain CONDITIONAL as model-specific numerical outputs and HOLD as stable physical quantities. Rank-deficient cases remain negative results; no scalar quadrupole or favorable-phase selection repairs them.
+
+The source-linked memo and supporting review records are **PROPOSED / NOT SEALED** in the FRM scientific worktree:
+
+- `docs/FRM_NEXT_20261117_R2_DECISION_MEMO.md`: observable qualification table, numerical-envelope definitions, A5 handover boundary and decision tree. SHA-256: `3eaa7a023e337d6c148592afa09915533625caee153795486fd837bc3771607d`.
+- `validation/frm_next_20261117_r2/DEPENDENCY_MATRIX.csv`: 11 dependency rows covering radius, order, density, z/quadrature, source-state, endpoints, influence, normalization and weak-field diagnostics; existing numerical tables remain authoritative.
+- `validation/frm_next_20261117_r2/NEXT_EVIDENCE_GATES.md`: precise questions, prerequisites, prospective measurable acceptance criteria and separate documentary/offline/native authorization boundaries.
+- `validation/frm_next_20261117_r2/SOURCE_REVIEW.json` and `review_sources.py`: documentary audit of 110 indexed artifacts (44 FRM-4B1, 29 FRM-4A, 35 FRM-3B5, two provenance); zero missing files/hash mismatches. All four external raw E/H inputs exist at recorded sizes. Raw hashes were not freshly recomputed; no native-state certification is inferred. Ten reviewed scientific source documents remain untracked. The assessment is not contained in scientific HEAD.
+
+**Smallest next gate:** author review of the intended physical claim, normalization and independently justified componentwise accuracy budget, followed by an existing-document lineage/convention check. Existing evidence suffices for a bounded descriptive-methodology discussion without duplicate calculations. If a physical claim is required, unresolved provenance or failure of the predeclared budget retains HOLD; do not tune radius/tolerance against the reference. A new discrete-operator analysis, evaluator acquisition or controlled mesh study would each need its own discriminating question and separate authorization. No automatic FRM-4B2 is proposed.
+
+**A5 interface:** source paths/hashes, actual coordinates/supports, rank/spectra, integrated complex g/H, endpoint B_end/J_end, T/K, VA normalization and deterministic sensitivity envelopes can be handed over conditionally. M0 native-state/mesh/field-buffer hash binding, independently repeated acquisition, physical orientation/time-phasor certainty, verified-J energy scale and calibrated physical error bounds cannot be represented as established. R5 snapshot hashes do not supply missing M0 lineage. A5's physical benchmark HOLD and S2's separate editorial/physical gates remain unchanged.
+
+**Reporting reconciliation:** published FRM/A5/S2 reports were read at reporting HEAD `672870ab37c5f3a08531e865d943de4a7a7053be`, matching remote main by a read-only check. Two unrelated untracked publishing helpers prevented a clean-tree pull; they were left untouched, and the assigned FRM file was checked unchanged before this edit. The earlier FRM summary was published by the coordinator; this new assessment/status delta remains uncommitted and unpublished pending explicit approval. Other streams' reports and programme files are outside this edit's scope.
 
 ## Latest scope and findings
 
@@ -62,4 +81,4 @@ Reproducibility: use `..\TVMD_paper\.venv\Scripts\python.exe -B`, with FRM root 
 4. A5 owns the independent physical coupler-kick benchmark, excitation/phase/impulse interpretation and force agreement. FRM supplies source-qualified numerical families and limitations only; no A5 benchmark or radius optimisation was performed.
 5. Future FRM milestone completion includes reconciling this assigned status file under `docs/programme/REPORTING_PROTOCOL.md`, reviewing the diff, and obtaining explicit approval before commit/push. No continuous monitoring or automatic publication is claimed.
 
-**Baseline reconciliation:** the coordinator's historical report is superseded only as a current status summary: FRM-4B1 is complete rather than pending, and the ambiguous adaptive-refinement baseline is corrected to operator-confirmed disabled. All sealed historical decisions, HOLDs, CONDITIONAL findings and provenance limitations remain preserved. This proposed reporting update is not committed or published.
+**Baseline reconciliation:** the coordinator's historical report is superseded only as a current status summary: FRM-4B1 is complete rather than pending, and the ambiguous adaptive-refinement baseline is corrected to operator-confirmed disabled. All sealed historical decisions, HOLDs, CONDITIONAL findings and provenance limitations remain preserved. That historical summary was subsequently committed in the reporting repository; the FRM-NEXT-20261117-R2 delta above is proposed, uncommitted and not published.
